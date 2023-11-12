@@ -1,12 +1,12 @@
 #Задание 1
 
 
-# RED = '\u001b[41m'
-# BLUE = '\u001b[44m'
-# BLACK = '\u001b[30m'
-# WHITE = '\u001b[47m'
-# GREY = '\u001b[30;1m'
-# END = '\u001b[0m'
+RED = '\u001b[41m'
+BLUE = '\u001b[44m'
+BLACK = '\u001b[30m'
+WHITE = '\u001b[47m'
+GREY = '\u001b[30;1m'
+END = '\u001b[0m'
 
 
 # for i in range(6):
@@ -116,3 +116,51 @@
 #             paper.append(float(chislo))
 #             print (paper)
 # print ('Количество чисел меньше и больше 0:', len(paper))
+
+
+
+#Используя функцию очищения консольного вывода (```os.system("cls")``` или ```os.system("clear")```), реализовать анимацию из 2-3 кадров.
+
+
+
+
+# Доп.задание
+# import time
+# import os
+# clear = lambda : os.system('cls')
+# def draw_stickman():
+#                 print("   O   ")
+#                 print("  /|\  ")
+#                 print("  / \  ") 
+# def drawww_stickman():
+#                 print("   O\   ")
+#                 print("  /|  ")
+#                 print("  / \  ") 
+# def draww_stickman():
+#                 print("   O /  ")
+#                 print("  /|  ")
+#                 print("  / \  ") 
+# def drawn_stickman():
+#         print("   O  |Спасибо за внимание!)")
+#         print("  /|\ /-----")
+#         print("  / \  ") 
+    
+# draw_stickman()
+# time.sleep(1)
+# clear()
+# draww_stickman()
+# time.sleep(0.5)
+# clear()
+# drawww_stickman()
+# time.sleep(0.5)
+# clear()
+# draww_stickman()
+# time.sleep(0.5)
+# clear()
+# drawww_stickman()
+# time.sleep(0.5)
+# clear()
+# drawn_stickman()
+
+            
+
