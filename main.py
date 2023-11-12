@@ -1,12 +1,12 @@
 #Задание 1
 
 
-RED = '\u001b[41m'
-BLUE = '\u001b[44m'
-BLACK = '\u001b[30m'
-WHITE = '\u001b[47m'
-GREY = '\u001b[30;1m'
-END = '\u001b[0m'
+# RED = '\u001b[41m'
+# BLUE = '\u001b[44m'
+# BLACK = '\u001b[30m'
+# WHITE = '\u001b[47m'
+# GREY = '\u001b[30;1m'
+# END = '\u001b[0m'
 
 
 # for i in range(6):
@@ -63,49 +63,56 @@ END = '\u001b[0m'
 
 
 
-# ЗАДАНИЕ 3 ГРАФИК ФУНКЦИИ x^2
+#  ЗАДАНИЕ 3 ГРАФИК ФУНКЦИИ x^2
 
 
-plot_list = [[0 for i in range(10)] for i in range(10)]
-result = [0 for i in range(10)]
-for i in range(10):
-    result[i] = i ** 3
-step = round(abs(result[0] - result[9]) / 9, 2)
-print(step)
-for i in range(10):
-    for j in range(10):
-        if j == 0:
-            plot_list[i][j] = step * (8-i) + step
-for i in range(9):
-    for j in range(10):
-        if abs(plot_list[i][0] - result[9 - j]) < step:
-            for k in range(9):
-                if 8 - k == j:
-                    plot_list[i][k+1] = 1
-for i in range(9):
-    line = ''
-    for j in range(10):
-        if j == 0:
-            line += '\t' + str(int(plot_list[i][j])) + '\t'
-        if plot_list[i][j] == 0:
-            line += '--'
-        if plot_list[i][j] == 1:
-            line += '!!'
-    print(line)
-print('\t0\t1 2 3 4 5 6 7 8 9')
+# COMA = '@'
+# SPACE= "*"
 
-
-
-
+# if __name__ == '__main__':
+ 
+    
+#     for i in range(10, 0, -1):
+#         if i==10:
+#             print(i**2,f'{SPACE*18}{COMA*2}')
+#         elif i==9:
+#             print(i**2,f'{SPACE*17}{COMA*2}{SPACE*2}')
+#         elif i==8:
+#             print(i**2,f'{SPACE*15}{COMA*2}{SPACE*4}')
+#         elif i==7:
+#             print(i**2,f'{SPACE*13}{COMA*2}{SPACE*6}')
+#         elif i==6:
+#             print(i**2,f'{SPACE*11}{COMA*2}{SPACE*8}')
+#         elif i==5:
+#             print(i**2,f'{SPACE*9}{COMA*2}{SPACE*10}')
+#         elif i==4:
+#             print(i**2,f'{SPACE*6}{COMA*2}{SPACE*13}')
+#         elif i==3:
+#             print(i**2,f'{SPACE*5}{COMA*2}{SPACE*15}')
+#         elif i==2:
+#             print(i**2,f'{SPACE*3}{COMA*2}{SPACE*17}')
+#         else:
+#             print(i**2,f'{SPACE}{COMA*2}{SPACE*19}')
+#     print(0," ",1,2,3,4,5,6,7,8,9,10)
 
 
 
-# # for i in range(10):
-# #     print(plot_list[i])
-# #     pass
-# file = open('sequence.txt', 'r')
-# list = []
-# for number in file:
-#     list.append(float(number))
-# file.close()
-# print(list)
+
+
+
+
+#  ЗАДАНИЕ 4 ДИАГРАММА ПРОЦЕНТНОГО СООТНОЩЕНИЯ: Количество чисел меньше и больше 0 
+
+
+
+
+
+
+
+# with open('sequence.txt') as fh:
+#     paper = []
+#     for chislo in fh:
+#         if chislo!=0:
+#             paper.append(float(chislo))
+#             print (paper)
+# print ('Количество чисел меньше и больше 0:', len(paper))
